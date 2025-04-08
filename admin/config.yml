@@ -36,4 +36,3 @@ collections:
         fields:
           - {label: "Overskrift", name: "title", widget: "string"}
           - {label: "Innhold", name: "body", widget: "markdown"}
-
