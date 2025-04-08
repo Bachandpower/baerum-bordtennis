@@ -1,4 +1,3 @@
-
 backend:
   name: git-gateway
   branch: main
@@ -29,7 +28,6 @@ collections:
       - {label: "Profiltekst", name: "body", widget: "markdown"}
 
   - name: "treningstider"
-    label: "Treningstider"  - name: "treningstider"
     label: "Treningstider"
     files:
       - label: "Treningstider"
@@ -39,10 +37,3 @@ collections:
           - {label: "Overskrift", name: "title", widget: "string"}
           - {label: "Innhold", name: "body", widget: "markdown"}
 
-    files:
-      - label: "Treningstider"
-        name: "trening"
-        file: "content/trening/treningstider.md"
-        fields:
-          - {label: "Overskrift", name: "title", widget: "string"}
-          - {label: "Innhold", name: "body", widget: "markdown"}
