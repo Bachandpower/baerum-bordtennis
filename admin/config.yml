@@ -24,4 +24,16 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Navn", name: "navn", widget: "string"}
-      - {label:
+      - {label: "Alder", name: "alder", widget: "number"}
+      - {label: "Profiltekst", name: "body", widget: "markdown"}
+
+  - name: "treningstider"
+    label: "Treningstider"
+    files:
+      - label: "Treningstider"
+        name: "trening"
+        file: "content/trening/treningstider.md"
+        fields:
+          - {label: "Overskrift", name: "title", widget: "string"}
+          - {label: "Innhold", name: "body", widget: "markdown"}
+
