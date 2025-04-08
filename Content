@@ -1,1 +1,13 @@
 
+ admin/
+│   └── config.yml
+│
+├── content/
+│   └── trening/
+│       └── treningstider.md
+│
+├── css/
+│   └── style.css (valgfritt)
+│
+├── index.html
+└── open.html (valgfritt)
