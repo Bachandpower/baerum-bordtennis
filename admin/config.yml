@@ -1,0 +1,39 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "turnering"
+    label: "Turneringer"
+    folder: "content/turnering"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tittel", name: "title", widget: "string"}
+      - {label: "Dato", name: "date", widget: "datetime"}
+      - {label: "Innhold", name: "body", widget: "markdown"}
+      - {label: "Vipps-lenke", name: "vipps", widget: "string"}
+
+  - name: "spillere"
+    label: "Spillerprofiler"
+    folder: "content/spillere"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Navn", name: "navn", widget: "string"}
+      - {label: "Alder", name: "alder", widget: "number"}
+      - {label: "Profiltekst", name: "body", widget: "markdown"}
+
+  - name: "treningstider"
+    label: "Treningstider"
+    files:
+      - label: "Treningstider"
+        name: "trening"
+        file: "content/trening/treningstider.md"
+        fields:
+          - {label: "Overskrift", name: "title", widget: "string"}
+          - {label: "Innhold", name: "body", widget: "markdown"}
